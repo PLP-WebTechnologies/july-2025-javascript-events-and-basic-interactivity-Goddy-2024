@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Web Page Example</h1>
+        <nav>
+            <a href="#form-section">Form</a> |
+            <a href="#gallery">Gallery</a> |
+            <a href="#counter-section">Counter</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Form Section -->
+        <section id="form-section">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="you@example.com">
+
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Your message"></textarea>
+
+                <button type="submit">Submit</button>
+                <p id="formFeedback"></p>
+            </form>
+        </section>
+
+        <!-- Interactive Gallery -->
+        <section id="gallery">
+            <h2>Image Gallery</h2>
+            <img src="https://via.placeholder.com/150" alt="Placeholder" id="galleryImage">
+            <button id="changeImage">Change Image</button>
+        </section>
+
+        <!-- Counter Section -->
+        <section id="counter-section">
+            <h2>Click Counter</h2>
+            <p>Clicks: <span id="counter">0</span></p>
+            <button id="incrementBtn">Click Me</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Interactive Demo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
